@@ -1,44 +1,51 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { TypeAnimation } from "react-type-animation";
 function Home() {
   return (
     <div
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black  via-black to-gray-800 "
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a full stack developer
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div>
-            <button
-              className="group text-white w-fit px-6 py-3 my2
-            flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"
-            >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </button>
-          </div>
-        </div>
-        <div>
+      <div className="w-full-lg ml-4 mr-4 flex flex-col items-center justify-center h-full px-4">
+        <div className="py-4">
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-full mx-auto w-[150px] "
           />
+        </div>
+        <div className="flex w-full items-stretch justify-center py-4">
+          <div className="flex flex-col h-full">
+            <h2 className="text-2xl text-center leading-none sm:text-2xl font-bold text-white py-4 ">
+              <TypeAnimation
+                sequence={[
+                  "Software Engineer",
+                  1000,
+                  "Full Stack Developer",
+                  1000,
+                  "Hi, I Am Aman kumar ",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: "2em", display: "inline-block" }}
+                repeat={Infinity}
+              />
+            </h2>
+          </div>
+        </div>
+        <div className="animate-bounce  flex flex-col">
+          <button
+            className="text-white w-fit px-6 py-3 my2
+            flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"
+          >
+            Portfolio
+            <span className="rotate-90">
+              <MdKeyboardArrowRight size={25} className="ml-1" />
+            </span>
+          </button>
         </div>
       </div>
     </div>

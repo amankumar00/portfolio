@@ -23,7 +23,7 @@ function About() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <br />
-        <p className="text-xl">
+        <p className="hidden sm:flex text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
