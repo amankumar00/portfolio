@@ -1,4 +1,5 @@
 import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
 import Experience from "./components/Experience.jsx";
 import Home from "./components/Home.jsx";
 import NavigBar from "./components/NavigBar.jsx";
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Portfolio />
       <Experience />
+      <Contact />
       <SocialLinks />
     </div>
   );
