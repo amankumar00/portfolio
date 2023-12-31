@@ -38,7 +38,7 @@ function NavigBar() {
       id: 1,
       child: (
         <>
-          <FaLinkedin size={30} />
+          <FaLinkedin size={20} />
         </>
       ),
       href: "https://www.linkedin.com/in/amankumar-exe/",
@@ -47,7 +47,7 @@ function NavigBar() {
       id: 2,
       child: (
         <>
-          <FaGithub size={30} />
+          <FaGithub size={20} />
         </>
       ),
       href: "https://github.com/amankumar00",
@@ -56,7 +56,7 @@ function NavigBar() {
       id: 3,
       child: (
         <>
-          <CiMail size={30} />
+          <CiMail size={20} />
         </>
       ),
       href: "mailto:amanku070300@gmail.com",
@@ -65,7 +65,7 @@ function NavigBar() {
       id: 4,
       child: (
         <>
-          <IoPersonOutline size={30} />
+          <IoPersonOutline size={20} />
         </>
       ),
       href: "http://surl.li/nasav",
@@ -92,7 +92,7 @@ function NavigBar() {
             );
           })}
         </ul>
-        <ul className="hidden s:flex xs:flex flex-row">
+        <ul className="hidden sm:flex xs:flex flex-row">
           {socials.map(({ id, child, href }) => {
             return (
               <li
