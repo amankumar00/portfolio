@@ -73,12 +73,12 @@ function Experience() {
             <p className="py-6">These are the technologies I've worked with</p>
           </div>
 
-          <div className="w-full grid grid-cols-3 xs:grid-cols-2 gap-8 text-center py-8 px-12 sm:px-0">
+          <div className="w-full grid grid-cols-3 xs:grid-cols-2 gap-4 text-center py-8 px-12 sm:px-0">
             {techs.map(({ id, src, style, title }) => {
               return (
                 <div
                   key={id}
-                  className={`w-full min-w-[150px] shadow-md hover:scale-105 duration-200 py-2 rounded-full 
+                  className={`w-full shadow-md hover:scale-105 duration-200 py-2 rounded-full 
                   ${style}`}
                 >
                   <img src={src} alt="" className="w-20 mx-auto" />
