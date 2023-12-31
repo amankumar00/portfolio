@@ -82,7 +82,7 @@ function Experience() {
                   ${style}`}
                 >
                   <img src={src} alt="" className="w-20 mx-auto" />
-                  <p className="mt-4">{title}</p>
+                  <p className=" hidden lg:mt-4 md:mt-4 mt-4">{title}</p>
                 </div>
               );
             })}
