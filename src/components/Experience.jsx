@@ -5,6 +5,8 @@ import github from "../assets/github.png";
 import nextjs from "../assets/nextjs.png";
 import node from "../assets/node.png";
 import react from "../assets/react.png";
+import tailwind from "../assets/tailwind.png";
+import graphql from "../assets/graphql.png";
 function Experience() {
   const techs = [
     {
@@ -43,23 +45,35 @@ function Experience() {
       title: "React",
       style: "shadow-blue-400",
     },
+    {
+      id: 7,
+      src: graphql,
+      title: "GraphQL",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 8,
+      src: tailwind,
+      title: "TailWind",
+      style: "shadow-blue-300",
+    },
   ];
 
   return (
     <section>
       <div
         name="Experience"
-        className="bg-gradient-to-b from-gray-900 to-black w-full h-screen"
+        className="bg-gradient-to-b from-black to-gray-900 w-full h-fit"
       >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
           <div>
             <p className="text-4xl inline border-b-4 border-gray-500 p-2">
-              Experience
+              Skills
             </p>
             <p className="py-6">These are the technologies I've worked with</p>
           </div>
 
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+          <div className="w-full grid grid-cols-3 xs:grid-cols-2 gap-8 text-center py-8 px-12 sm:px-0">
             {techs.map(({ id, src, style, title }) => {
               return (
                 <div

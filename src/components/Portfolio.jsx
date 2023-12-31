@@ -6,7 +6,7 @@ import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 
 function Portfolio() {
-  const portfolios = [
+  const projects = [
     {
       id: 1,
       src: arrayDestruct,
@@ -33,27 +33,27 @@ function Portfolio() {
     <section>
       <div
         name="Portfolio"
-        className="bg-gradient-to-b from-black to-gray-900 w-full text-white md:h-screen"
+        className="bg-gradient-to-b from-gray-900 to-black w-full text-white "
       >
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-              Portfolio
+            <p className="text-4xl  inline border-b-4 border-gray-500">
+              Projects
             </p>
             <p className="py-6">Check out some of my work here</p>
-            <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-              {portfolios.map(({ id, src }) => {
+            <div className=" h-full grid overflow-x-auto grid-flow-col gap-8 px-3 py-6 sm:px-0">
+              {projects.map(({ id, src }) => {
                 return (
                   <div
                     key={id}
-                    className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105"
+                    className=" h-52 w-72 shadow-md shadow-gray-600 rounded-lg duration-200  hover:scale-105  "
                   >
                     <img src={src} alt="" className="rounded-md " />
                     <div className="flex items-center justify-center">
-                      <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
+                      <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105 rounded-lg font-thin ">
                         Demo
                       </button>
-                      <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
+                      <button className=" font-thin w-1/2 px-6 py-3 duration-200 hover:scale-105 rounded-lg">
                         Code
                       </button>
                     </div>

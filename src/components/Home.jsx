@@ -1,8 +1,8 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
+import profilePic from "../assets/profilepic.jpg";
 function Home() {
   return (
     <section>
@@ -13,7 +13,7 @@ function Home() {
         <div className="w-full-lg ml-4 mr-4 flex flex-col items-center justify-center h-full px-4">
           <div className="py-4">
             <img
-              src={HeroImage}
+              src={profilePic}
               alt="my profile"
               className="rounded-full mx-auto w-[150px] "
             />
@@ -38,12 +38,11 @@ function Home() {
               </h2>
             </div>
           </div>
-          <Link to="Portfolio" smooth className=" animate-bounce flex flex-col">
+          <Link to="About" smooth className=" animate-bounce flex flex-col">
             <button
               className="text-white w-fit px-6 py-3 my2
             flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"
             >
-              Portfolio
               <span className="rotate-90">
                 <MdKeyboardArrowRight size={25} className="ml-1" />
               </span>
