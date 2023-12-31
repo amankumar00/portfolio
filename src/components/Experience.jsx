@@ -78,7 +78,7 @@ function Experience() {
               return (
                 <div
                   key={id}
-                  className={`w-auto shadow-md hover:scale-105 duration-200 py-2 rounded-full 
+                  className={`w-full min-w-[150px] shadow-md hover:scale-105 duration-200 py-2 rounded-full 
                   ${style}`}
                 >
                   <img src={src} alt="" className="w-20 mx-auto" />

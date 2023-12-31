@@ -15,6 +15,7 @@ html {
 }
 Section {
   scroll-snap-align: start;
+  scroll-snap-stop: end;
 }
 /* width */
 ::-webkit-scrollbar {
