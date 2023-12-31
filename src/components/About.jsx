@@ -14,7 +14,7 @@ function About() {
             </p>
           </div>
 
-          <p className="text-xl mt-10">
+          <p className="mt-10">
             Greetings! I am a passionate and skilled software developer with
             over 1 year of hands-on experience, specializing in web development
             with the MERN (MongoDB, Express.js, React.js, Node.js) stack. My
